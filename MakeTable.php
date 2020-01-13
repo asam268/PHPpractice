@@ -38,12 +38,7 @@ function generateRow()
 <html>
 <head>
     <title>PHP Table Practice</title>
-    <style>
-        td {
-            border: 2px solid black;
-            padding: 2px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="PracticeStyle.css">
 </head>
 <body>
 <?php pageHeader();?>
