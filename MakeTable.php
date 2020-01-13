@@ -31,6 +31,7 @@ function generateRow()
     } else {
         echo "0 results.";
     }
+    closeConn($conn);
 }
 
 ?>
