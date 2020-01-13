@@ -1,5 +1,6 @@
 <?php
 //practice with creating tables from db: https://www.techfry.com/php-tutorial/how-to-execute-mysql-query-in-php
+require_once("PageFormat.php");
 function openConn()
 {
     $dbhost = 'localhost';
@@ -45,6 +46,7 @@ function generateRow()
     </style>
 </head>
 <body>
+<?php pageHeader();?>
 <h1>Student Table</h1>
 <table style="border: 2px solid black;">
     <tr>
