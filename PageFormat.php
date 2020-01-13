@@ -13,6 +13,7 @@ function pageHeader()
 <li><a href="./">Project Files</a></li>
 <li><a href="https://www.w3resource.com/php-exercises/">PHP Exercises</a></li>
 <li><a href="../phpmyadmin">Database</a></li>
+<li><a href="https://github.com/asam268/PHPpractice">Github</a></li>
 </ul>
 </nav>
 </div>
