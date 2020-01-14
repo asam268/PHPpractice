@@ -25,7 +25,7 @@ function getProjectFiles(){
     if ($handle = opendir('.')) {
         echo "<ul>";
         while(false !== ($entry = readdir($handle))) {
-            if($entry != "." && $entry != ".." && $entry != ".git" && $entry != ".gitignore" && $entry != ".idea") {
+            if($entry != "." && substr($entry, 0, 1) !== '.' && substr($entry, 0, 4) !== 'Exer') {
                 echo "<li><a href='$entry'>$entry</a></li>";
             }
         }

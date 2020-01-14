@@ -13,13 +13,13 @@ pageHeader();
     <form method="POST">
         <table>
             <tr>
-                <th>id</th>
+<!--                <th>id</th>-->
                 <th>Name</th>
                 <th>Major</th>
                 <th>Age</th>
             </tr>
             <tr>
-                <td><input type="text" name="id"></td>
+<!--                <td><input type="text" name="id"></td>-->
                 <td><input type="text" name="Name"</td>
                 <td><input type="text" name="Major"</td>
                 <td><input type="text" name="Age"></td>
@@ -30,12 +30,19 @@ pageHeader();
         </table>
     </form>
     <?php
+    require_once("Connections.php");
     if(isset($_POST['submit'])) {
-        $id = $_POST['id'];
+//        $id = $_POST['id'];
         $name = $_POST['Name'];
         $major = $_POST['Major'];
         $age = $_POST['Age'];
-        echo "<h1> $id $name $major $age </h1>";
+        echo "<h1> $name $major $age </h1>";
+        $conn = openConn();
+        $query = "INSERT INTO `student`(`Name`, `Major`, `Age`) VALUES ('$name', '$major', $age)";
+        $result = mysqli_query($conn, $query);
+
+
+        closeConn($conn);
     }
     ?>
 </main>
