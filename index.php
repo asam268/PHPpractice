@@ -11,6 +11,7 @@ require_once("PageFormat.php");
     <?php
     pageHeader();
     getProjectFiles();
+    getExercises();
     //TODO: Get project files to show descriptions on a tooltip text
     //TODO: Finish add user
     ?>

@@ -32,5 +32,18 @@ function getProjectFiles(){
         echo "</ul>";
         closedir($handle);
     }
+}
 
+function getExercises(){
+    echo "<h3>W3 Exercises:</h3>";
+    if ($handle = opendir('.')) {
+        echo "<ul>";
+        while(false !== ($entry = readdir($handle))) {
+            if(substr($entry, 0, 4) === 'Exer') {
+                echo "<li><a href='$entry'>$entry</a></li>";
+            }
+        }
+        echo "</ul>";
+        closedir($handle);
+    }
 }
