@@ -39,8 +39,13 @@ pageHeader();
         echo "<h1> $name $major $age </h1>";
         $conn = openConn();
         $query = "INSERT INTO `student`(`Name`, `Major`, `Age`) VALUES ('$name', '$major', $age)";
-        $result = mysqli_query($conn, $query);
-
+//        $result = mysqli_query($conn, $query);
+        if($conn->query($query) === TRUE) {
+            echo "New Record Created.";
+        }
+        else {
+            echo 'Error: ' . $query . "<br>" . $conn->error;
+        }
 
         closeConn($conn);
     }

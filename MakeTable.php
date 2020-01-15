@@ -1,22 +1,23 @@
 <?php
 //practice with creating tables from db: https://www.techfry.com/php-tutorial/how-to-execute-mysql-query-in-php
 require_once("PageFormat.php");
-function openConn()
-{
-    $dbhost = 'localhost';
-    $dbuser = 'root';
-    $dbpass = '';
-    $db = 'test4320';
-
-    $conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect Failed: %s" . $conn->error);
-
-    return $conn;
-}
-
-function closeConn($conn)
-{
-    $conn->close();
-}
+require_once("Connections.php");
+//function openConn()
+//{
+//    $dbhost = 'localhost';
+//    $dbuser = 'root';
+//    $dbpass = '';
+//    $db = 'test4320';
+//
+//    $conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect Failed: %s" . $conn->error);
+//
+//    return $conn;
+//}
+//
+//function closeConn($conn)
+//{
+//    $conn->close();
+//}
 
 function generateRow()
 {

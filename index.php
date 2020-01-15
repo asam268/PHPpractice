@@ -10,8 +10,11 @@ require_once("PageFormat.php");
 <body>
     <?php
     pageHeader();
+    echo "<span>";
     getProjectFiles();
+    echo"</span><span>";
     getExercises();
+    echo "</span>";
     //TODO: Get project files to show descriptions on a tooltip text
     //TODO: Finish add user
     ?>

@@ -43,6 +43,11 @@ nav ul li a:hover {
     background-color: #111;
 }
 
+span {
+    float: left;
+    margin: 10px;
+}
+
 .pageHeader {
     background-color: #515151;
 }
