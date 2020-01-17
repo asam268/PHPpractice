@@ -10,9 +10,9 @@ function pageHeader()
 </header>
 <nav>
 <ul>
-<li><a href="./">Project Files</a></li>
+<li><a href="/PHPPractice/index.php">Project Home</a></li>
 <li><a href="https://www.w3resource.com/php-exercises/">PHP Exercises</a></li>
-<li><a href="../phpmyadmin">Database</a></li>
+<li><a href="/phpmyadmin">Database</a></li>
 <li><a href="https://github.com/asam268/PHPpractice">Github</a></li>
 </ul>
 </nav>
@@ -36,7 +36,7 @@ function getProjectFiles(){
 
 function getExercises(){
     echo "<h3>W3 Exercises:</h3>";
-    if ($handle = opendir('.')) {
+    if ($handle = opendir('./w3exercises')) {
         echo "<ul>";
         while(false !== ($entry = readdir($handle))) {
             if(substr($entry, 0, 4) === 'Exer') {

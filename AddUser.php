@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Practicing with PHP</title>
-    <link rel="stylesheet" type="text/css" href="PracticeStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/PracticeStyle.css">
 </head>
 <body>
 <?php

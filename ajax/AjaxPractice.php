@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Ajax Practice</title>
-    <link rel="stylesheet" type="text/css" href="PracticeStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/PracticeStyle.css">
     <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -22,7 +22,7 @@
 </head>
 <body>
 <?php
-require_once("PageFormat.php");
+require_once("../PageFormat.php");
 pageHeader();
 ?>
 <div id="test">

@@ -40,7 +40,7 @@ function generateRow()
 <html>
 <head>
     <title>PHP Table Practice</title>
-    <link rel="stylesheet" type="text/css" href="PracticeStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/PracticeStyle.css">
 </head>
 <body>
 <?php pageHeader();?>
