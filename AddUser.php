@@ -20,8 +20,8 @@ pageHeader();
             </tr>
             <tr>
 <!--                <td><input type="text" name="id"></td>-->
-                <td><input type="text" name="Name"</td>
-                <td><input type="text" name="Major"</td>
+                <td><input type="text" name="Name"></td>
+                <td><input type="text" name="Major"></td>
                 <td><input type="text" name="Age"></td>
             </tr>
             <tr>
